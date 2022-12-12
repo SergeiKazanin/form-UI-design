@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('');*/
+    background-size: cover;
+    height: 100vh;
+}
+
+.opt-card {
+    text-align: center;
+    background-color: rgb(179, 167, 167);
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 40px -20px black;
+}
+
+.opt-card-inputs {
+    margin: 30px;
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    grid-template-columns: repeat(5, auto);
+}
+
+.opt-card-inputs input {
+    background-color: blueviolet;
+    width: 60px;
+    height: 70px;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.opt-card-inputs input:focus {
+    outline: 2px solid blueviolet;
+    border-color: transparent;
+}
+
+.opt-card button {
+    background-color: blueviolet;
+    border: none;
+    padding: 15px 50px;
+    font-size: 18px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.opt-card button:hover {
+    opacity: 0.9;
+}
+
+.opt-card button[disabled]{
+    opacity: 0.6;
+    cursor: default;
+}
